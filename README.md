@@ -19,7 +19,7 @@ https://github.com/0xDexter0us/Scavenger/releases/
 Grab the jar file `build/libs/Scavenger-x.x.x.jar`
 
 ## Installation
-1. Download the latest jar from releases or biuld from source
+1. Download the latest jar from releases or build from source
 2. Add the jar to Burp Suite.
 
 ## Usage
@@ -36,4 +36,4 @@ Grab the jar file `build/libs/Scavenger-x.x.x.jar`
 
 ## Thanks To
 
-* CoreyD97 - https://github.com/CoreyD97/BurpCustomizer
+* CoreyD97 - https://github.com/CoreyD97
