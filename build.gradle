@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.5.31'
+}
+
+group 'com.dexter0us'
+version '0.5.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.5.31"
+    implementation "commons-io:commons-io:2.6"          //do not update, it will break
+    implementation "com.miglayout:miglayout-core:5.3"   //do not update, it will break
+    implementation "com.miglayout:miglayout-swing:5.3"  //do not update, it will break
+    implementation "net.portswigger.burp.extender:burp-extender-api:2.3"
+    implementation "com.google.code.gson:gson:2.8.9"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-swing:1.5.2"
+}
+
+task fatJar(type: Jar) {
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+    from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
