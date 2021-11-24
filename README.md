@@ -9,6 +9,9 @@
 # Scavenger
 #### Burp extension to create target specific and tailored wordlist from burp history.
 
+### Read my blog explaining use cases and methodology:
+### [Art of Fuzzing and Creating Tailored Wordlists with Scavenger](https://blog.dexter0us.com/posts/art-of-fuzzing-and-tailored-wordlist/)
+
 ## Download releases:
 `https://github.com/0xDexter0us/Scavenger/releases/`
 
