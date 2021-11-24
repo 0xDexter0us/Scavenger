@@ -7,19 +7,14 @@
 
 
 # Scavenger
-### Burp extension to create target specific and tailored wordlist from burp history.
+#### Burp extension to create target specific and tailored wordlist from burp history.
 
 ## Download releases:
-```
-https://github.com/0xDexter0us/Scavenger/releases/
-```
+`https://github.com/0xDexter0us/Scavenger/releases/`
 
 ## Build from source
-```sh
-./gradlew build fatjar
-```
-
-Grab the jar file `build/libs/Scavenger-x.x.x.jar`
+* `./gradlew build fatjar`
+* Grab the jar file `build/libs/Scavenger-x.x.x.jar`
 
 ## Installation
 1. Download the latest jar from releases or build from source
