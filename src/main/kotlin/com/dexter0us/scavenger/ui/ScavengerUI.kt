@@ -218,11 +218,10 @@ class ScavengerUI : JFrame("Scavenger"), ActionListener {
 
     override fun actionPerformed(e: ActionEvent?) {
         when (e?.source) {
-            listCBox -> {
-                fileNameTB.text = projectName(listCBox.selectedIndex)
-            }
+            listCBox ->  fileNameTB.text = projectName(listCBox.selectedIndex)
             selectFolder -> folderSelector()
             saveFile -> {
+                progressBar.value = 0
                 saveFile.isEnabled = false
                 cursor = Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR)
                 GlobalScope.launch(Dispatchers.Swing) {
@@ -239,12 +238,10 @@ class ScavengerUI : JFrame("Scavenger"), ActionListener {
                     cursor = Cursor.getDefaultCursor()
                 }
             }
-
             twitterButton -> openInBrowser("https://twitter.com/0xDexter0us")
             githubButton -> openInBrowser("https://github.com/0xDexter0us/Scavenger")
             blogButton -> openInBrowser("https://dexter0us.com/")
             kofiButton -> openInBrowser("https://ko-fi.com/dexter0us")
-
         }
     }
 
