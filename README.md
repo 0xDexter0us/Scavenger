@@ -41,5 +41,7 @@ Grab the jar file `build/libs/Scavenger-x.x.x.jar`
 
 * CoreyD97 - https://github.com/CoreyD97
 
+-----
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Q5Q76ZT6K)
 
