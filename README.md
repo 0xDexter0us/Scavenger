@@ -2,7 +2,7 @@
 [![Github Stars](https://img.shields.io/github/stars/0xDexter0us/Scavenger.svg?style=social&label=Stars)](https://github.com/0xDexter0us/Scavenger/) 
 [![GitHub Followers](https://img.shields.io/github/followers/0xDexter0us.svg?style=social&label=Follow)](https://github.com/0xDexter0us/Scavenger/)
 [![Follow on Twitter](https://img.shields.io/twitter/follow/0xDexter0us.svg?style=social&label=Follow)](https://twitter.com/intent/follow?screen_name=0xDexter0us)
-[![Discord Shield](https://discordapp.com/api/guilds/559875484901703690/widget.png?style=shield)](https://discord.gg/bugbounty)
+[![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/bugbounty)
 
 
 
