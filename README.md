@@ -5,7 +5,7 @@
 [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/bugbounty)
 
 
-<img src="images/scavenger.PNG" width="380" alt="logo">
+<img align="center" src="images/scavenger.PNG" width="380" alt="logo">
 <h4 align="center">Burp extension to create target specific and tailored wordlist from burp history.</h4>
 
 ---
