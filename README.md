@@ -4,8 +4,9 @@
 [![Follow on Twitter](https://img.shields.io/twitter/follow/0xDexter0us.svg?style=social&label=Follow)](https://twitter.com/intent/follow?screen_name=0xDexter0us)
 [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/bugbounty)
 
-
-<img align="center" src="images/scavenger.PNG" width="380" alt="logo">
+<h1 align="center">
+<img src="images/scavenger.PNG" width="380" align="middle" style="vertical-align:top" >
+ </h1>
 <h4 align="center">Burp extension to create target specific and tailored wordlist from burp history.</h4>
 
 ---
@@ -51,6 +52,6 @@
 Feel free to suggest any ideas.:slightly_smiling_face:
 -----
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Q5Q76ZT6K)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Q5Q76ZT6K)<br>
  <a href="https://discord.gg/bugbounty"><img src="images/Join-Discord.png" width="380" alt="Join Discord"></a>
 
