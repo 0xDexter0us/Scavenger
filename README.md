@@ -33,7 +33,8 @@
 * If you like the project, please give the repo a star! <3
 ### Resources
 [Art of Fuzzing and Creating Tailored Wordlists with Scavenger](https://blog.dexter0us.com/posts/art-of-fuzzing-and-tailored-wordlist/)- By me<br>
-[Real world usage of this tool](https://bendtheory.medium.com/finding-and-exploiting-unintended-functionality-in-main-web-app-apis-6eca3ef000af)-By Bend Theory :skull:
+[Real world usage of this tool](https://bendtheory.medium.com/finding-and-exploiting-unintended-functionality-in-main-web-app-apis-6eca3ef000af)-By Bend Theory :skull:<br>
+[Who, What, Where, When, Wordlist by TomNomNom](https://www.youtube.com/watch?v=W4_QCSIujQ4)
 ## Changelog
 **26 November 2021 - v0.7.0**
  - Added filter option to exclude words with png, jpg, gif, woff extension.
