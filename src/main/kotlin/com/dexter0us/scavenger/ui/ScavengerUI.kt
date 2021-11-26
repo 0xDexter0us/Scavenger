@@ -33,6 +33,7 @@ class ScavengerUI : JFrame("Scavenger"), ActionListener {
         "Combine All Three Lists"
     )
     private var listCBox = JComboBox(listType)
+    private var checkBox = JCheckBox()
     private var fileLocation = JTextField()
     private val fileNameTB = JTextField()
     private val progressBar = JProgressBar()
@@ -94,6 +95,11 @@ class ScavengerUI : JFrame("Scavenger"), ActionListener {
         selectFolder = JButton("Select Folder...")
         selectFolder.addActionListener(this)
 
+        checkBox.apply {
+            text = "Exclude words with svg, png, jpg, ttf, woff extension."
+            isFocusable = false
+            isEnabled = false
+        }
 
         val saveImage = loadImage("save.png")
         when {
@@ -183,6 +189,8 @@ class ScavengerUI : JFrame("Scavenger"), ActionListener {
             add(fileLocation, "growx, split 2, h 30!")
             add(selectFolder, "wrap, span, h 30!")
             add(JSeparator(SwingConstants.HORIZONTAL), "")
+            add(checkBox, "span, left, wrap")
+            add(JSeparator(SwingConstants.HORIZONTAL), "")
             add(saveFile, "span, center, w 125!, h 30!")
             add(progressBar, "span, center, growx, h 20!")
 
@@ -210,7 +218,7 @@ class ScavengerUI : JFrame("Scavenger"), ActionListener {
 
             defaultCloseOperation = DISPOSE_ON_CLOSE
             isResizable = false
-            setSize(600, 530)
+            setSize(600, 550)
             isVisible = true
         }
     }
@@ -218,7 +226,12 @@ class ScavengerUI : JFrame("Scavenger"), ActionListener {
 
     override fun actionPerformed(e: ActionEvent?) {
         when (e?.source) {
-            listCBox ->  fileNameTB.text = projectName(listCBox.selectedIndex)
+            listCBox -> {
+                fileNameTB.text = projectName(listCBox.selectedIndex)
+                if (listCBox.selectedIndex == 2 || listCBox.selectedIndex ==3){
+                    checkBox.isEnabled = true
+                }
+            }
             selectFolder -> folderSelector()
             saveFile -> {
                 progressBar.value = 0
@@ -227,7 +240,7 @@ class ScavengerUI : JFrame("Scavenger"), ActionListener {
                 GlobalScope.launch(Dispatchers.Swing) {
                     currJob?.cancel()
 
-                    val processResult = BurpHistoryParser().historyParser(listCBox.selectedIndex, fileLocation.text, fileNameTB.text)
+                    val processResult = BurpHistoryParser().historyParser(listCBox.selectedIndex, fileLocation.text, fileNameTB.text, checkBox.isSelected)
                     currJob = processResult.job
                     for (y in processResult.resultChannel) {
                         progressBar.maximum = historySize - 5
@@ -268,9 +281,12 @@ class ScavengerUI : JFrame("Scavenger"), ActionListener {
             dialogTitle = "Select Folder"
             fileSelectionMode = JFileChooser.DIRECTORIES_ONLY
             isAcceptAllFileFilterUsed = false
+            val response = showOpenDialog(null)
 
-            if (showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
-                fileLocation.text = File(currentDirectory.absolutePath).toString()
+            if (response == JFileChooser.APPROVE_OPTION) {
+                fileLocation.text = File(selectedFile.absolutePath).toString()
+            } else {
+                fileLocation.text = currentDirectory.toString()
             }
         }
     }

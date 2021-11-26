@@ -10,7 +10,7 @@ import java.util.*
 
 class BurpHistoryParser {
 
-    fun historyParser(index: Int, fileLocation: String, fileName: String): ProcessResult {
+    fun historyParser(index: Int, fileLocation: String, fileName: String, filter: Boolean): ProcessResult {
         val channel = Channel<Int>()
         val job = GlobalScope.launch(Dispatchers.Default) {
 
@@ -78,14 +78,14 @@ class BurpHistoryParser {
             }
 
             when (index) {
-                0 -> run { writeFile(fileLocation, fileName, paramList) }
-                1 -> run { writeFile(fileLocation, fileName, jsonKeyList) }
-                2 -> run { writeFile(fileLocation, fileName, ((endpointList + jsList) as MutableSet<String>)) }
+                0 -> run { writeFile(fileLocation, fileName, filterList(paramList, filter) ) }
+                1 -> run { writeFile(fileLocation, fileName, filterList(jsonKeyList, filter)) }
+                2 -> run { writeFile(fileLocation, fileName, filterList(((endpointList + jsList) as MutableSet<String>), filter)) }
                 3 -> run {
                     writeFile(
                         fileLocation,
                         fileName,
-                        ((paramList + endpointList + jsList + jsonKeyList) as MutableSet<String>)
+                        filterList(((paramList + endpointList + jsList + jsonKeyList) as MutableSet<String>), filter)
                     )
                 }
             }
@@ -100,6 +100,23 @@ class BurpHistoryParser {
         console("File: $absoluteFilePath")
         FileUtils.writeLines(File(absoluteFilePath), wordlist, true)
         console("Saved!!!")
+    }
+
+    private fun filterList(set: MutableSet<String>, bool: Boolean): MutableSet<String> {
+        if (bool){
+            set.removeIf {
+                it.lowercase().endsWith("svg")
+                        || it.lowercase().endsWith("png")
+                        || it.lowercase().endsWith("jpg")
+                        || it.lowercase().endsWith("jpeg")
+                        || it.lowercase().endsWith("gif")
+                        || it.lowercase().endsWith("ttf")
+                        || it.lowercase().endsWith("woff")
+                        || it.lowercase().endsWith("woff2")
+            }
+            return set
+        }
+        return set
     }
 }
 

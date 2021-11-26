@@ -9,7 +9,7 @@ import javax.swing.*
 open class Extension : IBurpExtender, IExtensionStateListener {
     companion object{
         const val pluginName = "Scavenger"
-        const val version = "0.5.0"
+        const val version = "0.7.0"
     }
 
     private var scavUnload = false
