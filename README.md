@@ -5,8 +5,7 @@
 [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/bugbounty)
 
 
-<h1 align="center">🆂🅲🅰🆅🅴🅽🅶🅴🆁</h1>
-<img src="images/scavenger.PNG" width="380" alt="Join Discord">
+<img src="images/scavenger.PNG" width="380" alt="logo">
 <h4 align="center">Burp extension to create target specific and tailored wordlist from burp history.</h4>
 
 ---
@@ -52,6 +51,6 @@
 Feel free to suggest any ideas.:slightly_smiling_face:
 -----
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Q5Q76ZT6K)<h1 align="left">
-  <a href="https://discord.gg/bugbounty"><img src="images/Join-Discord.png" width="380" alt="Join Discord"></a>
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Q5Q76ZT6K)
+ <a href="https://discord.gg/bugbounty"><img src="images/Join-Discord.png" width="380" alt="Join Discord"></a>
 
