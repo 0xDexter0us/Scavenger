@@ -49,10 +49,9 @@
 * CoreyD97 - https://github.com/CoreyD97
 * ScreaMy - https://github.com/aadarsh-screamy
 
-Feel free to suggest any ideas.:slightly_smiling_face:
+### Feel free to suggest any ideas.:slightly_smiling_face:
 -----
-
-
- <a href="https://ko-fi.com/Q5Q76ZT6K"><img src="images/ko-fi.png" width="300" alt="ko-fi"></a>  
- <a href="https://discord.gg/bugbounty"><img src="images/Join-Discord.png" width="300" alt="Join Discord"></a>
-
+### Support the project.
+<h1 align="left">
+<a href="https://ko-fi.com/Q5Q76ZT6K"><img src="images/ko-fi.png" width="300" alt="ko-fi"></a>   <a href="https://discord.gg/bugbounty"><img src="images/Join-Discord.png" width="330" alt="Join Discord"></a>
+</h1>
