@@ -1,10 +1,9 @@
-<div align=center>
 [![GitHub release](https://img.shields.io/github/release/0xDexter0us/Scavenger.svg)](https://github.com/0xDexter0us/Scavenger/releases) 
 [![Github Stars](https://img.shields.io/github/stars/0xDexter0us/Scavenger.svg?style=social&label=Stars)](https://github.com/0xDexter0us/Scavenger/) 
 [![GitHub Followers](https://img.shields.io/github/followers/0xDexter0us.svg?style=social&label=Follow)](https://github.com/0xDexter0us/Scavenger/)
 [![Follow on Twitter](https://img.shields.io/twitter/follow/0xDexter0us.svg?style=social&label=Follow)](https://twitter.com/intent/follow?screen_name=0xDexter0us)
 [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/bugbounty)
-<div>
+
 
 <h1 align="center">
 <img src="images/scavenger.PNG" width="380" align="middle" style="vertical-align:top" >
