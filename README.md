@@ -52,6 +52,7 @@
 Feel free to suggest any ideas.:slightly_smiling_face:
 -----
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Q5Q76ZT6K)<br>
- <a href="https://discord.gg/bugbounty"><img src="images/Join-Discord.png" width="380" alt="Join Discord"></a>
+
+ <a href="https://ko-fi.com/Q5Q76ZT6K"><img src="images/ko-fi.png" width="300" alt="ko-fi"></a>  
+ <a href="https://discord.gg/bugbounty"><img src="images/Join-Discord.png" width="300" alt="Join Discord"></a>
 
