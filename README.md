@@ -32,6 +32,10 @@
 * If you like the project, please give the repo a star! <3
 
 ## Changelog
+**26 November 2021 - v0.7.0**
+ - Added filter option to exclude words with png, jpg, gif, woff extension.
+ - Fixed the folder selection bug.
+
 **24 November 2021 - v0.5.0**
  - First public release
 
