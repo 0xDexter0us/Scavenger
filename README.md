@@ -1,14 +1,30 @@
-[![GitHub release](https://img.shields.io/github/release/0xDexter0us/Scavenger.svg)](https://github.com/0xDexter0us/Scavenger/releases) 
-[![Github Stars](https://img.shields.io/github/stars/0xDexter0us/Scavenger.svg?style=social&label=Stars)](https://github.com/0xDexter0us/Scavenger/) 
-[![GitHub Followers](https://img.shields.io/github/followers/0xDexter0us.svg?style=social&label=Follow)](https://github.com/0xDexter0us/Scavenger/)
-[![Follow on Twitter](https://img.shields.io/twitter/follow/0xDexter0us.svg?style=social&label=Follow)](https://twitter.com/intent/follow?screen_name=0xDexter0us)
-[![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/bugbounty)
-
-
 <h1 align="center">
-<img src="images/scavenger.PNG" width="380" align="middle" style="vertical-align:top" >
- </h1>
+  <br>
+  <a href="https://github.com/0xDexter0us/Scavenger/"><img src="https://github.com/0xDexter0us/Scavenger/raw/main/images/scavenger.PNG" alt="Scavenger" width="380" align="middle" style="vertical-align:top"></a>
+</h1>
+
 <h4 align="center">Burp extension to create target specific and tailored wordlist from burp history.</h4>
+
+---
+
+<p align="center">
+  <a href="https://github.com/0xDexter0us/Scavenger/releases">
+    <img src="https://img.shields.io/github/release/0xDexter0us/Scavenger.svg">
+  </a>
+  <a href="https://github.com/0xDexter0us/Scavenger/">
+      <img src="https://img.shields.io/github/stars/0xDexter0us/Scavenger.svg?style=social&label=Stars">
+  </a>
+  <a href="https://github.com/0xDexter0us/Scavenger/">
+    <img src="https://img.shields.io/github/followers/0xDexter0us.svg?style=social&label=Follow">
+  </a>
+  <a href="https://twitter.com/intent/follow?screen_name=0xDexter0us">
+      <img src="https://img.shields.io/twitter/follow/0xDexter0us.svg?style=social&label=Follow">
+  </a>
+  <a href="https://discord.gg/bugbounty">
+      <img src="https://img.shields.io/badge/chat-on%20discord-7289da.svg">
+  </a>
+
+</p>
 
 ---
 
@@ -33,11 +49,19 @@
 * Just click the save button ! 
 * **But remember to set the scope first!**
 * If you like the project, please give the repo a star! <3
-### Resources
-[Art of Fuzzing and Creating Tailored Wordlists with Scavenger](https://blog.dexter0us.com/posts/art-of-fuzzing-and-tailored-wordlist/)- By me<br>
-[Real world usage of this tool](https://bendtheory.medium.com/finding-and-exploiting-unintended-functionality-in-main-web-app-apis-6eca3ef000af)-By Bend Theory :skull:<br>
-[Who, What, Where, When, Wordlist by TomNomNom](https://www.youtube.com/watch?v=W4_QCSIujQ4)
+
+## Resources
+
+[Art of Fuzzing and Creating Tailored Wordlists with Scavenger](https://blog.dexter0us.com/posts/art-of-fuzzing-and-tailored-wordlist/) - By Dexter0us (me)<br>
+[Real world usage of this tool](https://bendtheory.medium.com/finding-and-exploiting-unintended-functionality-in-main-web-app-apis-6eca3ef000af) -By Bend Theory :skull:<br>
+[Who, What, Where, When, Wordlist](https://www.youtube.com/watch?v=W4_QCSIujQ4) - by TomNomNom
+
 ## Changelog
+
+**28 November 2021 - v.0.7.5**
+ - Added filter to remove blank and empty lines.
+ - Improved extension filter.
+
 **26 November 2021 - v0.7.0**
  - Added filter option to exclude words with png, jpg, gif, woff extension.
  - Fixed the folder selection bug.
@@ -50,9 +74,10 @@
 * CoreyD97 - https://github.com/CoreyD97
 * ScreaMy - https://github.com/aadarsh-screamy
 
-### Feel free to suggest any ideas.:slightly_smiling_face:
+### Feel free to suggest any ideas. :)
+
 -----
-### Support the project.
-<h1 align="left">
-<a href="https://ko-fi.com/Q5Q76ZT6K"><img src="images/ko-fi.png" width="300" alt="ko-fi"></a>   <a href="https://discord.gg/bugbounty"><img src="images/Join-Discord.png" width="330" alt="Join Discord"></a>
-</h1>
+
+[![Join our Discord server!](https://invidget.switchblade.xyz/bugbounty)](http://discord.gg/bugbounty)
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Q5Q76ZT6K)

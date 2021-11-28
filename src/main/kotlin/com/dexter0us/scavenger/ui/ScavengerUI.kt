@@ -127,7 +127,7 @@ class ScavengerUI : JFrame("Scavenger"), ActionListener {
             twitterImage != null -> {
                 twitterButton = JButton("Follow me on Twitter", twitterImage)
                 twitterButton.componentOrientation = ComponentOrientation.RIGHT_TO_LEFT
-                twitterButton.iconTextGap = 7
+                twitterButton.iconTextGap = 3
             }
             else -> twitterButton = JButton("Follow me on Twitter")
         }
@@ -139,7 +139,7 @@ class ScavengerUI : JFrame("Scavenger"), ActionListener {
             githubImage != null -> {
                 githubButton = JButton("View Project on Github", githubImage)
                 githubButton.componentOrientation = ComponentOrientation.RIGHT_TO_LEFT
-                githubButton.iconTextGap = 7
+                githubButton.iconTextGap = 3
             }
             else -> githubButton = JButton("View Project on Github")
         }
@@ -151,7 +151,7 @@ class ScavengerUI : JFrame("Scavenger"), ActionListener {
             blogImage != null -> {
                 blogButton = JButton("Checkout my Blog", blogImage)
                 blogButton.componentOrientation = ComponentOrientation.RIGHT_TO_LEFT
-                blogButton.iconTextGap = 7
+                blogButton.iconTextGap = 3
             }
             else -> blogButton = JButton("Checkout my Blog")
         }
@@ -163,7 +163,7 @@ class ScavengerUI : JFrame("Scavenger"), ActionListener {
             kofiImage != null -> {
                 kofiButton = JButton("Support Project on Ko-Fi", kofiImage)
                 kofiButton.componentOrientation = ComponentOrientation.RIGHT_TO_LEFT
-                kofiButton.iconTextGap = 7
+                kofiButton.iconTextGap = 3
             }
             else -> kofiButton = JButton("Buy me a Coffee")
         }
@@ -201,10 +201,10 @@ class ScavengerUI : JFrame("Scavenger"), ActionListener {
             border = BorderFactory.createEmptyBorder(2, 0, 10, 0)
 
             add(JLabel("Created with <3 by Dexter0us"), "span, align center, wrap")
-            add(twitterButton, "w 200!, h 30!")
-            add(githubButton, "w 200!, h 30!, wrap")
-            add(blogButton, "w 200!, h 30!")
-            add(kofiButton, "w 200!, h 30!, wrap")
+            add(twitterButton, "w 230!, h 30!")
+            add(githubButton, "w 230!, h 30!, wrap")
+            add(blogButton, "w 230!, h 30!")
+            add(kofiButton, "w 230!, h 30!, wrap")
         }
 
         this.also {
@@ -258,6 +258,7 @@ class ScavengerUI : JFrame("Scavenger"), ActionListener {
         }
     }
 
+// Credits to CoreyD97 for this idea and function
 
     private fun loadImage(filename: String): ImageIcon? {
         val cldr = this.javaClass.classLoader

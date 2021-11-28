@@ -1,5 +1,6 @@
 package com.dexter0us.scavenger
 
+//      Credits to https://github.com/GerbenJavado/LinkFinder for the original idea and regex
 
 open class JSParser {
     private var finalList = mutableListOf<String>()
