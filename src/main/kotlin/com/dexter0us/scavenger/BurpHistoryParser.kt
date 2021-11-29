@@ -120,7 +120,7 @@ class BurpHistoryParser {
                 return set
             }
             else -> { set.removeIf {
-                    it.isBlank() || it.isBlank()
+                    it.isEmpty() || it.isBlank()
                 }
                 return set
             }
