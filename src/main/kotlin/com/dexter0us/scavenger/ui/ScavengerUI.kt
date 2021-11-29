@@ -191,7 +191,7 @@ class ScavengerUI : JFrame("Scavenger"), ActionListener {
             add(JSeparator(SwingConstants.HORIZONTAL), "")
             add(checkBox, "span, left, wrap")
             add(JSeparator(SwingConstants.HORIZONTAL), "")
-            add(saveFile, "span, center, w 125!, h 30!")
+            add(saveFile, "span, center, w 125!, h 35!")
             add(progressBar, "span, center, growx, h 20!")
 
         }
@@ -200,11 +200,11 @@ class ScavengerUI : JFrame("Scavenger"), ActionListener {
             layout = MigLayout("align center")
             border = BorderFactory.createEmptyBorder(2, 0, 10, 0)
 
-            add(JLabel("Created with <3 by Dexter0us"), "span, align center, wrap")
-            add(twitterButton, "w 230!, h 30!")
-            add(githubButton, "w 230!, h 30!, wrap")
-            add(blogButton, "w 230!, h 30!")
-            add(kofiButton, "w 230!, h 30!, wrap")
+            add(JLabel("Created with ♥ by Dexter0us"), "span, align center, wrap")
+            add(twitterButton, "w 230!, h 35!")
+            add(githubButton, "w 230!, h 35!, wrap")
+            add(blogButton, "w 230!, h 35!")
+            add(kofiButton, "w 230!, h 35!, wrap")
         }
 
         this.also {
@@ -228,8 +228,9 @@ class ScavengerUI : JFrame("Scavenger"), ActionListener {
         when (e?.source) {
             listCBox -> {
                 fileNameTB.text = projectName(listCBox.selectedIndex)
-                if (listCBox.selectedIndex == 2 || listCBox.selectedIndex ==3){
-                    checkBox.isEnabled = true
+                when (listCBox.selectedIndex) {
+                    2, 3 -> checkBox.isEnabled = true
+                    0, 1 -> checkBox.isEnabled = false
                 }
             }
             selectFolder -> folderSelector()

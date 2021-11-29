@@ -103,27 +103,27 @@ class BurpHistoryParser {
     }
 
     private fun filterList(set: MutableSet<String>, bool: Boolean): MutableSet<String> {
-        if (bool){
-            set.removeIf {
-                it.lowercase().endsWith(".svg")
-                        || it.lowercase().endsWith(".png")
-                        || it.lowercase().endsWith(".jpg")
-                        || it.lowercase().endsWith(".jpeg")
-                        || it.lowercase().endsWith(".gif")
-                        || it.lowercase().endsWith(".ttf")
-                        || it.lowercase().endsWith(".woff")
-                        || it.lowercase().endsWith(".woff2")
-                        || it.lowercase().endsWith(".ico")
-                        || it.isEmpty()
-                        || it.isBlank()
+        when {
+            bool -> { set.removeIf {
+                    it.lowercase().endsWith(".svg")
+                    || it.lowercase().endsWith(".png")
+                    || it.lowercase().endsWith(".jpg")
+                    || it.lowercase().endsWith(".jpeg")
+                    || it.lowercase().endsWith(".gif")
+                    || it.lowercase().endsWith(".ttf")
+                    || it.lowercase().endsWith(".woff")
+                    || it.lowercase().endsWith(".woff2")
+                    || it.lowercase().endsWith(".ico")
+                    || it.isEmpty()
+                    || it.isBlank()
+                }
+                return set
             }
-            return set
-
-        } else {
-            set.removeIf {
-                it.isBlank() || it.isBlank()
+            else -> { set.removeIf {
+                    it.isBlank() || it.isBlank()
+                }
+                return set
             }
-            return set
         }
     }
 }

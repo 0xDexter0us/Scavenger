@@ -52,8 +52,8 @@
 
 ## Resources
 
-[Art of Fuzzing and Creating Tailored Wordlists with Scavenger](https://blog.dexter0us.com/posts/art-of-fuzzing-and-tailored-wordlist/) - By Dexter0us (me)<br>
-[Real world usage of this tool](https://bendtheory.medium.com/finding-and-exploiting-unintended-functionality-in-main-web-app-apis-6eca3ef000af) -By Bend Theory :skull:<br>
+[Art of Fuzzing and Creating Tailored Wordlists with Scavenger](https://blog.dexter0us.com/posts/art-of-fuzzing-and-tailored-wordlist/) - by Dexter0us (me)<br>
+[Real world usage of this tool](https://bendtheory.medium.com/finding-and-exploiting-unintended-functionality-in-main-web-app-apis-6eca3ef000af) - by Bend Theory :skull:<br>
 [Who, What, Where, When, Wordlist](https://www.youtube.com/watch?v=W4_QCSIujQ4) - by TomNomNom
 
 ## Changelog
@@ -61,6 +61,7 @@
 **28 November 2021 - v.0.7.5**
  - Added filter to remove blank and empty lines.
  - Improved extension filter.
+ - Fixed JButton Icons.
 
 **26 November 2021 - v0.7.0**
  - Added filter option to exclude words with png, jpg, gif, woff extension.
