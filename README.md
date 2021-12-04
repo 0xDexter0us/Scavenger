@@ -11,6 +11,9 @@
   <a href="https://github.com/0xDexter0us/Scavenger/releases">
     <img src="https://img.shields.io/github/release/0xDexter0us/Scavenger.svg">
   </a>
+  <a href="https://github.com/0xDexter0us/Scavenger/releases">
+    <img src="https://img.shields.io/github/downloads/0xDexter0us/Scavenger/total?label=downloads&logo=github&color=inactive" alt="github downloads">
+  </a>
   <a href="https://github.com/0xDexter0us/Scavenger/">
       <img src="https://img.shields.io/github/stars/0xDexter0us/Scavenger.svg?style=social&label=Stars">
   </a>
